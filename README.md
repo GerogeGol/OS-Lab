@@ -7,19 +7,19 @@
 > ### 1. [**System Info**](#1systeminfo)
 >- [CPU](#cpu)
 >- [RAM](#ram)
->- [DISK USAGE](#diskusage)
+>- [DISK USAGE](#disk-usage)
 >- [GPU](#gpu)
 >- [NETWORK](#network)
->- [PROCESS INFO](#processinfo)
-> ###  2. [**System&nbsp;Environment**](#2systemenvironment)
-> ###  3. [**Grep**](#3grep)
-> ###  4. [**Find**](#4find)
-> ###  5. [**Bash**](#5bash)
-> ###  6. [**Administration**](#6administration)
+>- [PROCESS INFO](#process-info)
+> ###  2. [**System&nbsp;Environment**](#2-system-environment)
+> ###  3. [**Grep**](#3-grep-1)
+> ###  4. [**Find**](#4-find-1)
+> ###  5. [**Bash**](#5-bash-1)
+> ###  6. [**Administration**](#6-administration-1)
 
 
 
-# 1.&nbsp;System&nbsp;Info
+# 1. System Info
 ## **CPU**
 
 ----
