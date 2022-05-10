@@ -4,18 +4,18 @@
 
 ## Список тем
 
-> ### 1. [**System Info**](#1.&nbsp;System&nbsp;Info)
->- [CPU](##**CPU**)
->- [RAM](##**RAM**)
->- [DISK USAGE](##**DISK&nbsp;USAGE**)
->- [GPU](##**GPU**)
->- [NETWORK](##**NETWORK**)
->- [PROCESS INFO](##**PROCESS&nbsp;INFO**)
-> ###  2. [**System&nbsp;Environment**](#2.&nbsp;**System&nbsp;Environment**)
-> ###  3. [**Grep**](#3.&nbsp;**Grep**)
-> ###  4. [**Find**](#4.&nbsp;**Find**)
-> ###  5. [**Bash**](#5.&nbsp;**Bash**)
-> ###  6. [**Administration**](#6.&nbsp;**Administartion**)
+> ### 1. [**System Info**](#1systeminfo)
+>- [CPU](#cpu)
+>- [RAM](#ram)
+>- [DISK USAGE](#diskusage)
+>- [GPU](#gpu)
+>- [NETWORK](#network)
+>- [PROCESS INFO](#processinfo)
+> ###  2. [**System&nbsp;Environment**](#2systemenvironment)
+> ###  3. [**Grep**](#3grep)
+> ###  4. [**Find**](#4find)
+> ###  5. [**Bash**](#5bash)
+> ###  6. [**Administration**](#6administration)
 
 
 
@@ -28,7 +28,7 @@
 
 ----
 
-## **DISK&nbsp;USAGE**
+## **DISK USAGE**
 
 ----
 
@@ -40,17 +40,17 @@
 
 ----
 
-## **PROCESS&nbsp;INFO**
+## **PROCESS INFO**
 
 ----
 
 
-# 2.&nbsp;**System&nbsp;Environment**
+# 2. **System Environment**
 
-# 3.&nbsp;**Grep**
+# 3. **Grep**
 
-# 4.&nbsp;**Find**
+# 4. **Find**
 
-# 5.&nbsp;**Bash**
+# 5. **Bash**
 
-# 6.&nbsp;**Administartion**
+# 6. **Administration**
