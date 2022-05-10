@@ -4,7 +4,7 @@
 
 ## Список тем
 
-> ### 1. [**System Info**](#1-system-info-1)
+> ### 1. [**System Info**](#1-system-info-1 "Задания 1 - 12")
 >- [CPU](#cpu)
 >- [RAM](#ram)
 >- [DISK USAGE](#disk-usage)
@@ -17,14 +17,38 @@
 > ###  5. [**Bash**](#5-bash-1)
 > ###  6. [**Administration**](#6-administration-1)
 
-
-
 # 1. System Info
 ## **CPU**
 
 ----
+**1.** Какими способами можно узнать информацию о CPU?
+
+
+
+***Ответ:***   
+**a.**  
+1. Вывести содержимое файла *cpuinfo* в директории */proc*: `cat /proc/cpuinfo `
+2. Используя комманду: `lscpu`.
+3. Используя комманду: `inxi -Cxa`
+
+**b.** Комманда для вывода: `inxi -Cx`  
+*Вывод:*  
+![Пример вывода](images/cpu/1.b.png)
+
+----
 
 ## **RAM**
+
+----
+
+**1.** Что такое RAM и Swap?
+
+**RAM** - 
+
+
+---
+
+
 
 ----
 
