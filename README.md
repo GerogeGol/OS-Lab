@@ -4,7 +4,7 @@
 
 ## Список тем
 
-> ### 1. [**System Info**](#1systeminfo)
+> ### 1. [**System Info**](#1-system-info-1)
 >- [CPU](#cpu)
 >- [RAM](#ram)
 >- [DISK USAGE](#disk-usage)
