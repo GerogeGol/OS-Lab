@@ -60,7 +60,7 @@
   
 ***Ответ:***  
   
-![*`scripts/ram/change_swap_size.sh`*](/scripts/ram/change_swap_size.sh):
+[*`scripts/ram/change_swap_size.sh`*](/scripts/ram/change_swap_size.sh):
 ```bash
 swapfile=$1
 new_swap_size=$2
