@@ -1,0 +1,122 @@
+george      1272       1  0 мая23 ?     00:00:02 /usr/lib/systemd/systemd --user
+george      1273    1272  0 мая23 ?     00:00:00 (sd-pam)
+george      1283       1  0 мая23 ?     00:00:04 /usr/bin/gnome-keyring-daemon --daemonize --login
+george      1288    1257  0 мая23 tty2  00:00:00 /usr/lib/gdm-x-session --run-script /usr/bin/gnome-session
+george      1290    1288  1 мая23 tty2  00:31:10 /usr/lib/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+george      1310    1272  0 мая23 ?     00:00:43 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+george      1312    1288  0 мая23 tty2  00:00:00 /usr/lib/gnome-session-binary
+george      1346    1272  0 мая23 ?     00:00:00 /usr/lib/gvfsd
+george      1351    1272  0 мая23 ?     00:00:00 /usr/lib/gvfsd-fuse /run/user/1000/gvfs -f
+george      1361    1272  0 мая23 ?     00:00:00 /usr/lib/at-spi-bus-launcher
+george      1367    1361  0 мая23 ?     00:00:01 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_1
+george      1388    1272  0 мая23 ?     00:00:00 /usr/lib/gnome-session-ctl --monitor
+george      1390    1272  0 мая23 ?     00:00:01 /usr/lib/gnome-session-binary --systemd-service --session=gnome
+george      1405    1272  3 мая23 ?     00:55:26 /usr/bin/gnome-shell
+george      1453    1272  0 мая23 ?     00:00:00 /usr/lib/xdg-permission-store
+george      1458    1272  0 мая23 ?     00:00:00 /usr/lib/gnome-shell-calendar-server
+george      1465    1272  0 мая23 ?     00:00:00 /usr/lib/evolution-source-registry
+george      1471    1272  0 мая23 ?     00:00:00 /usr/lib/goa-daemon
+george      1472    1272  0 мая23 ?     00:12:02 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+george      1475    1272  0 мая23 ?     00:00:00 /usr/lib/evolution-calendar-factory
+george      1476    1272  0 мая23 ?     00:00:03 /usr/lib/dconf-service
+george      1487    1272  0 мая23 ?     00:00:01 /usr/lib/goa-identity-service
+george      1492    1272  0 мая23 ?     00:00:00 /usr/lib/gvfs-udisks2-volume-monitor
+george      1507    1272  0 мая23 ?     00:00:00 /usr/lib/evolution-addressbook-factory
+george      1524    1272  0 мая23 ?     00:00:05 /usr/lib/gvfs-afc-volume-monitor
+george      1532    1272  0 мая23 ?     00:00:00 /usr/lib/gvfs-goa-volume-monitor
+george      1536    1272  0 мая23 ?     00:00:00 /usr/lib/gvfs-mtp-volume-monitor
+george      1545    1472  0 мая23 ?     00:00:00 /usr/lib/pulse/gsettings-helper
+george      1555    1272  0 мая23 ?     00:00:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+george      1557    1272  0 мая23 ?     00:00:08 /usr/lib/at-spi2-registryd --use-gnome-session
+george      1576    1272  0 мая23 ?     00:00:03 /usr/bin/ibus-daemon --panel disable --xim
+george      1578    1272  0 мая23 ?     00:00:00 /usr/lib/gsd-a11y-settings
+george      1580    1272  0 мая23 ?     00:00:02 /usr/lib/gsd-color
+george      1583    1272  0 мая23 ?     00:00:00 /usr/lib/gsd-datetime
+george      1586    1272  0 мая23 ?     00:00:02 /usr/lib/gsd-housekeeping
+george      1590    1272  0 мая23 ?     00:00:01 /usr/lib/gsd-keyboard
+george      1592    1272  0 мая23 ?     00:00:02 /usr/lib/gsd-media-keys
+george      1593    1272  0 мая23 ?     00:00:02 /usr/lib/gsd-power
+george      1596    1272  0 мая23 ?     00:00:00 /usr/lib/gsd-print-notifications
+george      1599    1272  0 мая23 ?     00:00:00 /usr/lib/gsd-rfkill
+george      1601    1272  0 мая23 ?     00:00:00 /usr/lib/gsd-screensaver-proxy
+george      1604    1272  0 мая23 ?     00:00:05 /usr/lib/gsd-sharing
+george      1606    1272  0 мая23 ?     00:00:00 /usr/lib/gsd-smartcard
+george      1608    1272  0 мая23 ?     00:00:00 /usr/lib/gsd-sound
+george      1613    1272  0 мая23 ?     00:00:00 /usr/lib/gsd-usb-protection
+george      1616    1272  0 мая23 ?     00:00:01 /usr/lib/gsd-wacom
+george      1618    1272  0 мая23 ?     00:00:04 /usr/lib/gsd-xsettings
+george      1645    1272  0 мая23 ?     00:00:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+george      1646    1576  0 мая23 ?     00:00:00 /usr/lib/ibus/ibus-dconf
+george      1649    1576  0 мая23 ?     00:00:02 /usr/lib/ibus/ibus-extension-gtk3
+george      1651    1272  0 мая23 ?     00:00:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+george      1667    1272  0 мая23 ?     00:00:02 /usr/lib/ibus/ibus-portal
+george      1670    1272  0 мая23 ?     00:00:00 /usr/lib/gsd-printer
+george      1706    1390  0 мая23 ?     00:00:00 /usr/bin/python3 /usr/bin/fildem
+george      1709    1390  0 мая23 ?     00:00:01 /usr/lib/evolution-data-server/evolution-alarm-notify
+george      1716    1390  0 мая23 ?     00:00:00 /usr/lib/gsd-disk-utility-notify
+george      1719    1390  0 мая23 ?     00:00:00 touchegg
+george      1805    1272  0 мая23 ?     00:00:25 gjs /usr/share/gnome-shell/extensions/gsconnect@andyholmes.github.io/service/daemon.js
+george      1863    1706  0 мая23 ?     00:00:02 python3 -c from fildem.appmenu import main as run; run()
+george      1865    1706  0 мая23 ?     00:00:36 python3 -c from fildem.keybinder import main as run; run()
+george      1900    1272  0 мая23 ?     00:00:28 /usr/lib/bamf/bamfdaemon
+george      1910    1576  0 мая23 ?     00:00:01 /usr/lib/ibus/ibus-engine-simple
+george      1923    1272  0 мая23 ?     00:00:00 /usr/lib/gvfsd-metadata
+george      2136    1346  0 мая23 ?     00:00:00 /usr/lib/gvfsd-trash --spawner :1.4 /org/gtk/gvfs/exec_spaw/0
+george      2144    1272  0 мая23 ?     00:00:08 /usr/lib/xdg-desktop-portal
+george      2148    1272  0 мая23 ?     00:00:03 /usr/lib/xdg-document-portal
+george      2157    1272  0 мая23 ?     00:00:10 /usr/lib/xdg-desktop-portal-gnome
+george      2198    1272  0 мая23 ?     00:00:05 /usr/lib/xdg-desktop-portal-gtk
+george      2204    1272  0 мая23 ?     00:00:01 /usr/bin/pipewire
+george      2205    1272  0 мая23 ?     00:00:06 /usr/bin/pipewire-media-session
+george      2253    1272  0 мая23 ?     00:00:01 python3 /usr/lib/lollypop/lollypop-sp
+george      2255    1272  0 мая23 ?     00:00:03 /usr/bin/gnome-calendar --gapplication-service
+george      2267    1272  0 мая23 ?     00:00:13 /usr/lib/tracker-miner-fs-3
+george      2348    1272  0 мая23 ?     00:00:00 /usr/lib/bluetooth/obexd
+george      2464    1272  0 мая23 ?     00:00:04 /usr/bin/gpg-agent --supervised
+george      2574    1346  0 мая23 ?     00:00:00 /usr/lib/gvfsd-network --spawner :1.4 /org/gtk/gvfs/exec_spaw/1
+george      2586    1346  0 мая23 ?     00:00:00 /usr/lib/gvfsd-dnssd --spawner :1.4 /org/gtk/gvfs/exec_spaw/3
+george      6339    1272  0 мая23 ?     00:00:01 /usr/bin/seahorse --gapplication-service
+george      6837    1283  0 мая23 ?     00:00:00 /usr/bin/ssh-agent -D -a /run/user/1000/keyring/.ssh
+george     10781    1346  0 мая23 ?     00:00:00 /usr/lib/gvfsd-http --spawner :1.4 /org/gtk/gvfs/exec_spaw/6
+george     92514    1272  0 20:58 ?        00:00:39 /usr/bin/nautilus --gapplication-service
+george     92746   92514  0 20:58 pts/1    00:00:01 /bin/zsh
+george     92757    1272  0 20:58 pts/1    00:00:00 /bin/zsh
+george     92766    1272  0 20:58 pts/1    00:00:00 /bin/zsh
+george     92767    1272  0 20:58 pts/1    00:00:00 /bin/zsh
+george     92769   92757  0 20:58 pts/1    00:00:00 /usr/share/zsh-theme-powerlevel10k/gitstatus/usrbin/gitstatusd -G v1.5.3 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 24
+george     92853    1272  2 20:58 ?        00:03:47 /opt/visual-studio-code/code --enable-crashpad .
+george     92857   92853  0 20:58 ?        00:00:00 /opt/visual-studio-code/code --type=zygote --no-zygote-sandbox --enable-crashpad --enable-crashpad
+george     92858   92853  0 20:58 ?        00:00:00 /opt/visual-studio-code/code --type=zygote --enable-crashpad --enable-crashpad
+george     92860   92858  0 20:58 ?        00:00:00 /opt/visual-studio-code/code --type=zygote --enable-crashpad --enable-crashpad
+george     92874    1272  0 20:58 ?        00:00:00 /opt/visual-studio-code/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/george/.config/Code/Crashpad --url=appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=06687a8d-8b01-4112-ac81-fcb2c6c870b4&iid=06687a8d-8b01-4112-ac81-fcb2c6c870b4&sid=06687a8d-8b01-4112-ac81-fcb2c6c870b4 --annotation=_companyName=Microsoft --annotation=_productName=VSCode --annotation=_version=1.67.2 --annotation=prod=Electron --annotation=ver=17.4.1 --initial-client-fd=43 --shared-client-connection
+george     92895   92857  4 20:58 ?        00:06:40 /opt/visual-studio-code/code --type=gpu-process --disable-color-correct-rendering --enable-crashpad --crashpad-handler-pid=92874 --enable-crash-reporter=25b309dd-c50c-42d5-8920-70f3175e14a1,no_channel --user-data-dir=/home/george/.config/Code --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAAAAAABgAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABgAAAAAAAAAGAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA= --shared-files --field-trial-handle=0,9627917512124411604,2755496666501961169,131072 --disable-features=PlzServiceWorker,SpareRendererForSitePerProcess
+george     92928   92853  0 20:58 ?        00:00:06 /opt/visual-studio-code/code --type=utility --utility-sub-type=network.mojom.NetworkService --lang=ru --service-sandbox-type=none --enable-crashpad --crashpad-handler-pid=92874 --enable-crash-reporter=25b309dd-c50c-42d5-8920-70f3175e14a1,no_channel --user-data-dir=/home/george/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,9627917512124411604,2755496666501961169,131072 --disable-features=PlzServiceWorker,SpareRendererForSitePerProcess --enable-crashpad
+george     92947   92853 11 20:58 ?        00:15:33 /opt/visual-studio-code/code --type=renderer --enable-crashpad --crashpad-handler-pid=92874 --enable-crash-reporter=25b309dd-c50c-42d5-8920-70f3175e14a1,no_channel --user-data-dir=/home/george/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --app-path=/opt/visual-studio-code/resources/app --no-sandbox --no-zygote --enable-blink-features=HighlightAPI --disable-color-correct-rendering --lang=ru --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=4 --launch-time-ticks=83407499426 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,9627917512124411604,2755496666501961169,131072 --disable-features=PlzServiceWorker,SpareRendererForSitePerProcess --vscode-window-config=vscode:b82ab1ed-2399-4a94-b176-e73e515f7713 --enable-crashpad
+george     92970   92853  1 20:58 ?        00:02:06 /opt/visual-studio-code/code --type=renderer --enable-crashpad --crashpad-handler-pid=92874 --enable-crash-reporter=25b309dd-c50c-42d5-8920-70f3175e14a1,no_channel --user-data-dir=/home/george/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --app-path=/opt/visual-studio-code/resources/app --no-sandbox --no-zygote --node-integration-in-worker --disable-color-correct-rendering --lang=ru --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=5 --launch-time-ticks=83408787170 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,9627917512124411604,2755496666501961169,131072 --disable-features=PlzServiceWorker,SpareRendererForSitePerProcess --vscode-window-config=vscode:7bd36080-fa48-45a4-80f8-0d6a1e64b169 --vscode-window-kind=shared-process --enable-crashpad
+george     92990   92970  0 20:58 ?        00:00:14 /opt/visual-studio-code/code --ms-enable-electron-run-as-node /opt/visual-studio-code/resources/app/out/bootstrap-fork --type=ptyHost
+george     93002   92853  1 20:58 ?        00:02:08 /opt/visual-studio-code/code --ms-enable-electron-run-as-node --inspect-port=0 /opt/visual-studio-code/resources/app/out/bootstrap-fork --type=extensionHost --skipWorkspaceStorageLock
+george     93030   92970  0 20:58 ?        00:00:02 /opt/visual-studio-code/code --ms-enable-electron-run-as-node /opt/visual-studio-code/resources/app/out/bootstrap-fork --type=fileWatcher
+george     93107   93002  0 20:58 ?        00:00:00 /opt/visual-studio-code/code --ms-enable-electron-run-as-node /opt/visual-studio-code/resources/app/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=93002
+george     99810    1272  1 21:34 ?        00:01:49 /usr/lib/gnome-terminal-server
+george     99844   99810  0 21:34 pts/2    00:00:53 zsh
+george     99849    1272  0 21:34 pts/2    00:00:00 zsh
+george     99857    1272  0 21:34 pts/2    00:00:00 zsh
+george     99858    1272  0 21:34 pts/2    00:00:00 zsh
+george     99862   99849  0 21:34 pts/2    00:00:00 /usr/share/zsh-theme-powerlevel10k/gitstatus/usrbin/gitstatusd -G v1.5.3 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 24
+george    101747    1405  0 21:50 ?        00:00:11 gjs /home/george/.local/share/gnome-shell/extensions/ding@rastersoft.com/ding.js -E -P /home/george/.local/share/gnome-shell/extensions/ding@rastersoft.com -M 0 -D 0:0:1920:1080:1:32:0:0:0:0
+george    117330   92990  0 22:17 pts/0    00:00:00 /usr/bin/zsh
+george    117336    1272  0 22:17 pts/0    00:00:00 /usr/bin/zsh
+george    117342    1272  0 22:17 pts/0    00:00:00 /usr/bin/zsh
+george    117344    1272  0 22:17 pts/0    00:00:00 /usr/bin/zsh
+george    117345  117336  0 22:17 pts/0    00:00:00 /usr/share/zsh-theme-powerlevel10k/gitstatus/usrbin/gitstatusd -G v1.5.3 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 24
+george    117390   92990  0 22:17 pts/4    00:00:01 /usr/bin/zsh
+george    117396    1272  0 22:17 pts/4    00:00:00 /usr/bin/zsh
+george    117402    1272  0 22:17 pts/4    00:00:00 /usr/bin/zsh
+george    117403    1272  0 22:17 pts/4    00:00:00 /usr/bin/zsh
+george    117405  117396  0 22:17 pts/4    00:00:00 /usr/share/zsh-theme-powerlevel10k/gitstatus/usrbin/gitstatusd -G v1.5.3 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 24
+george    119438   92853  0 22:27 ?        00:00:26 /opt/visual-studio-code/code --type=renderer --enable-crashpad --crashpad-handler-pid=92874 --enable-crash-reporter=25b309dd-c50c-42d5-8920-70f3175e14a1,no_channel --user-data-dir=/home/george/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --app-path=/opt/visual-studio-code/resources/app --no-sandbox --no-zygote --enable-blink-features=HighlightAPI --disable-color-correct-rendering --lang=ru --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=49 --launch-time-ticks=88746331224 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,9627917512124411604,2755496666501961169,131072 --disable-features=PlzServiceWorker,SpareRendererForSitePerProcess --vscode-window-config=vscode:2fa8c475-5626-4cee-b6be-af119ba2d965 --enable-crashpad
+george    119478   92853  0 22:27 ?        00:00:07 /opt/visual-studio-code/code --ms-enable-electron-run-as-node --inspect-port=0 /opt/visual-studio-code/resources/app/out/bootstrap-fork --type=extensionHost --skipWorkspaceStorageLock
+george    119479   92970  0 22:27 ?        00:00:00 /opt/visual-studio-code/code --ms-enable-electron-run-as-node /opt/visual-studio-code/resources/app/out/bootstrap-fork --type=fileWatcher
+george    124483   92860  1 22:57 ?        00:00:22 /opt/visual-studio-code/code --type=renderer --enable-crashpad --crashpad-handler-pid=92874 --enable-crash-reporter=25b309dd-c50c-42d5-8920-70f3175e14a1,no_channel --user-data-dir=/home/george/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --app-path=/opt/visual-studio-code/resources/app --enable-sandbox --enable-blink-features=HighlightAPI --disable-color-correct-rendering --lang=ru --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=52 --launch-time-ticks=90572436663 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,9627917512124411604,2755496666501961169,131072 --disable-features=PlzServiceWorker,SpareRendererForSitePerProcess --vscode-window-config=vscode:b82ab1ed-2399-4a94-b176-e73e515f7713
+george    127693   99844  0 23:17 pts/2    00:00:00 ps -ef
+george    127694   99844  0 23:17 pts/2    00:00:00 grep -w george
