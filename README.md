@@ -123,7 +123,6 @@ swapon $swapfile
 ----
 
 ## **GPU**  
-----  
   
 **9.** Вывести инфу о GPU (как правило команда зависит от типа GPU, необходима установка доп. пакетов. Хотя можно и системными средствами, хоть и не удобно)  
 ***Ответ:*** `sudo lshw -C display`
@@ -340,7 +339,12 @@ $ ps -ef | grep -w "$USER"
 ```shell
 $ find /lib/ -iname '*.so'
 ```
+***Вывод:***  
+![32.png](/images/find/32.png)
 
+---
+
+**33.** 
 
 # 5. **Bash**
 
@@ -363,6 +367,35 @@ print("Hello world!")
 **45.** Написать скрипт/функцию, который проверял бы существование файла или директории с заданным именем.  
 [`./scripts/bash/dir_file_exist.py`](/scripts/bash/dir_file_exist.py):
 ```python
+#!/usr/bin/python
+
+import sys
+import os
+import os.path
+
+PATH = sys.argv[1]
+PATH_TO_FIND = sys.argv[2]
+
+PATH = os.path.expanduser(PATH) + "/"
+
+PATH_TO_FIND_L = PATH_TO_FIND.split("/")
+PATH += "/".join(PATH_TO_FIND_L[:-1])
+TO_FIND = PATH_TO_FIND_L[-1]
+
+ldir = os.listdir(PATH)
+
+for el in ldir:
+    if TO_FIND in el:
+        if os.path.isdir(PATH + "/" + el):
+            print("It's directory")
+
+        if os.path.isfile(PATH + "/" + el):
+            print("It's file")
+
+        print(os.path.abspath(PATH + "/" + TO_FIND))
+        exit(0)
+else:
+    print("No such file or directory")
 ```
 
 ----

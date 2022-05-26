@@ -10,7 +10,8 @@
             "request": "launch",
             "program": "${file}",
             "args": [
-                "."
+                "/lib",
+                "./232323/321321/222/333"
             ],
             "console": "integratedTerminal",
             "justMyCode": true
