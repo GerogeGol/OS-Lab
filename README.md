@@ -407,7 +407,7 @@ $ find / -type -f -size +10M -size -15M
 **42.** Скопировать файлы из задания 32 (если они нашлись) в свою home директорию в поддиректорию tmp. (Find + cp)
 ```shell
 $ mkdir tmp
-$ find ~ -name "University" -exec cp -r "{}" tmp \\; 
+$ find ~ -name "University" -exec cp -r "{}" tmp \; 
 ```
 
 ---
