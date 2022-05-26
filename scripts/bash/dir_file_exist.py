@@ -24,6 +24,6 @@ for el in ldir:
             print("It's file")
 
         print(f"Absolute path: {os.path.abspath(PATH + '/' + TO_FIND)}")
-        exit(0)
+        break
 else:
     print("No such file or directory")

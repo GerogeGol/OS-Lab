@@ -9,10 +9,7 @@
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "args": [
-                "/lib",
-                "./232323/321321/222/333"
-            ],
+            "args": [],
             "console": "integratedTerminal",
             "justMyCode": true
         }

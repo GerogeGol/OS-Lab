@@ -348,14 +348,14 @@ $ find /lib/ -iname '*.so'
 
 # 5. **Bash**
 
-**43.** Создать директорию в своем home пространстве, где вы будете хранить все скрипты.
+**44.** Создать директорию в своем home пространстве, где вы будете хранить все скрипты.
 ```shell
 $ mkdir ~/scripts
 ```
 
 ----
 
-**44.** Написать «hello world» скрипт, запустить, убедиться, что он работает корректно.Написать «hello world» скрипт, запустить, убедиться, что он работает корректно.  
+**45.** Написать «hello world» скрипт, запустить, убедиться, что он работает корректно.Написать «hello world» скрипт, запустить, убедиться, что он работает корректно.  
 [*`./scripts/bash/hello_world.py`*](/scripts/bash/hello_word.py):  
 ```python
 #!/usr/bin/python
@@ -364,11 +364,10 @@ print("Hello world!")
 
 ----
 
-**45.** Написать скрипт/функцию, который проверял бы существование файла или директории с заданным именем.  
+**46.** Написать скрипт/функцию, который проверял бы существование файла или директории с заданным именем.  
 [`./scripts/bash/dir_file_exist.py`](/scripts/bash/dir_file_exist.py):
 ```python
 #!/usr/bin/python
-
 import sys
 import os
 import os.path
@@ -400,15 +399,91 @@ else:
 
 ----
 
+**47.** Написать функцию, которая проверяла бы ваши (*или любого другого пользователя) права доступа к заданному файлу или директории.
+[scripts/bash/check_permissions](/scripts/bash/check_permissions.py)
+```python
+#!/usr/bin/python
+import os
+import sys
+
+FILE_NAME = sys.argv[1]
+if not os.path.exists(FILE_NAME):
+    print("No such file or directory")
+    exit(-1)
+
+if os.access(FILE_NAME, os.R_OK):
+    print("Read", end=" ")
+if os.access(FILE_NAME, os.W_OK):
+    print("Write", end=" ")
+if os.access(FILE_NAME, os.X_OK):
+    print("Execute", end=" ")
+print()
+
+```
+----
+
+**48.** На лабораторных по другим предметам, когда вы используете C/C++ вы часто пишите консольные приложения. Возьмите любую вашу лабу и сделайте из нее утилиту.
+  
+Я использую компилятор `cmake` поэтому программы просто скопировал из cmake-build-debug  
+[scripts/bash/utilits/Calculator](/scripts/bash/utilits/Calculator)  
+[scripts/bash/utilits/HuffmanCode](/scripts/bash/utilits/HuffmanCode)
+
+----
+
+**49.** Написать скрипт, который бы:  
+Определял ваш регион  
+Подключался к сервису погоды, брал погоду для вашего региона  
+Показывал ее в stdout / при указании файла в качестве параметра – сохранял бы результат в файл.
+```python
+#!/usr/bin/python
+import geocoder
+import json
+import requests
+import sys
+
+API_KEY = "d42027c53bdcc122e7f74bcc8f84a5ef"
+g = geocoder.ip("me")
+lat = g.latlng[0]
+lon = g.latlng[1]
+
+url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid={API_KEY}"
+
+req = requests.get(url=url)
+data = req.json()
+info = f"City: {data['name']}.\n\
+    Weather: \n\
+        Main: {data['weather'][0]['main']}\n\
+        Description: {data['weather'][0]['description']}\n\
+        Temperature: {data['main']['temp']}℃ \n\
+        Feels Like: {data['main']['feels_like']}℃\n"
+
+if len(sys.argv) >= 2:
+    with open(sys.argv[1], "w") as f:
+        f.write(info)
+else:
+    print(info)
+
+```
+
+----
+
+**50.** Обновлять информацию о погоде в файле, с помощью вашего скрипта, используя системный планировщик задач cron.  
+```shell
+$ crontab -e 
+```
+открывается редактор `nano`. Пропписываем следующую строку (скрипт активируется каждые 30 минут и записывает информацию в файл `weather.txt` в `home` дирректории)
+
+```
+*/30 * * * * ~/scripts/get_weather.py ~/weather.txt
+```
+
+----
+
 **51.** Написать скрипт, реализующий адрессную книгу. В качестве хранилища информации можете использовать все что угодно: от текстового файла до БД. Скрипт должен поддерживать следующие функции  
-**a.** Добавление контакта: придется определить поля для заполнения; например, имя фамилия, email, телефон, доп. информация.  
-**b.** Удаление контакта  
-**c.** Вывод информации о контакте по имени.  
-**d.** Вывод списка контактов  
-**e.** ** любые другие функции если вам интересно это задание. Это отличная возможность потренировать работу с БД.
 
 [scripts/bash/address_book.py](/scripts/bash/address_book.py)
 
 ----
 
 # 6. **Administration**
+
